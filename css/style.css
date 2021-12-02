@@ -1,0 +1,94 @@
+/* regole generali */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* inizio regole per header */
+header {
+    width: 100%;
+    background-color: red; /*rimuovere*/
+}
+/* regole clearfix */
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header .float.left {
+    float: left;
+    height: 40px; /*rimuovere*/
+    background-color: aqua;  /*rimuovere*/
+    width: 40%;
+}
+
+header .float.right {
+    float: right;
+    height: 40px; /*rimuovere*/
+    background-color: aqua;  /*rimuovere*/
+    width: 40%;
+    text-align: right;
+}
+
+#logo {
+    display: inline-block;
+}
+
+header nav.first.nav {
+    display: inline-block;
+}
+
+header div.btn.header {
+    display: inline-block;
+}
+
+header nav.first.nav ul li {
+    display: inline-block;
+}
+/* fine regole per header */
+
+/* inizio jumbo */
+section.jumbotron {
+    background-color: blueviolet;
+    height: 400px; /*rimuovere*/
+}
+
+.jumbotron .container.jumbo {
+    width: 90%;
+    background-color: aquamarine; /*rimuovere*/
+    margin: auto;
+}
+
+.jumbotron h1 {
+    width: 100%;
+    background-color: brown; /*rimuovere*/
+    text-align: left;
+    padding: 40px 0px;
+}
+/* regole clearfix jumbo */
+section.jumbotron .clearix.jumbo {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.jumbotron .container.jumbo div.float.left {
+    float: left;
+    width: 40%;
+    text-align: left;
+    background-color: burlywood; /*rimuovere*/
+    border: 1px solid black; /*rimuovere*/
+}
+
+.jumbotron .container.jumbo div.float.right {
+    float: right;
+    width: 60%;
+    background-color: burlywood; /*rimuovere*/
+    border: 1px solid black; /*rimuovere*/
+}
+
