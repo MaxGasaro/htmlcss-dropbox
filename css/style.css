@@ -222,3 +222,57 @@ section.operations div.op-clearfix {
     padding: 40px;
 }
 /* fine sezione operations */
+/* inizio sezione logos */
+main section.logos {
+    width: 100%;
+    background-color: gold; /*rimuovere*/
+}
+/* regole clearfix sezione logos */
+section.logos div.col-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* fine reg cleearfix */
+section.logos div.col-container div.col {
+    float: left;
+    background-color: blanchedalmond; /*rimuovere*/
+    border: 1px solid red; /*rimuovere*/
+    height: 300px; /*rimuovere*/
+}
+
+section.logos div.col-container div.col.col-left, section.logos div.col-container div.col.col-right {
+    width: 30%;
+}
+
+section.logos div.col-container div.col.col-center {
+    width: 40%;
+}
+
+section.logos div.row-bottom {
+    background-color: coral; /*rimuovere*/
+    height: 150px; /*rimuovere*/
+    margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+/* regole clearfix per row-bottom */
+section.logos div.row-bottom::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* fine regole clearfix */
+section.logos div.row-bottom .first {
+    float: left;
+}
+
+section.logos div.row-bottom .second {
+    float: right;
+}
+/* fine regole css per sezione loghi */
+/* inizio sezione faq */
+section.faq div.row {
+    width: 100%;
+    background: gray; /*rimuovere*/
+}
