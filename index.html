@@ -8,23 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Dropbox</title>
 </head>
 <body>
     <!-- inizio header dove inserisco menù nav con logo e btn -->
     <header>
-
+        <!-- abbiamo modificato il fatto di mettere il logo e il bottone inizia all'interno della lista come elemento -->
         <div class="float left">
-            <div id="logo">
-                <a href="#">
-                    <img src="" alt="logo dropbox">
-                </a>
-            </div>
             <nav class="first nav">
                 <ul>
-                    <li><a href="#">ciao</a></li>
-                    <li><a href="#">ciao</a></li>
-                    <li><a href="#">ciao</a></li>
+                    <li id="logo">
+                        <a href="#">
+                            <img src="img/logo-small.png" alt="logo dropbox">
+                        </a>
+                    </li>
+                    <li><a href="#">Perchè Dropbox?</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,34 +33,33 @@
         <div class="float right">
             <nav class="first nav">
                 <ul>
-                    <li><a href="#">ciao</a></li>
-                    <li><a href="#">ciao</a></li>
-                    <li><a href="#">ciao</a></li>
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li class="btn header"><a href="#">Inizia</a></li>
                 </ul>
             </nav>
-            <div class="btn header">
-                <a href="#">Inizia</a>
-            </div>
         </div>
 
     </header>
-
+    <!-- inizio jumbotron -->
     <section class="jumbotron">
         <div class="container-jumbo">
-            <h1>Tutto cio che ti serve per il laovor, im un unicio posto</h1>
+            <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <div class="clearfix jumbo">
                 <div class="float left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minus illum nemo vero asperiores deserunt consectetur! Numquam, eum quae aliquam quis magni nesciunt, dolores dolore impedit, eaque quo amet. Minus!</p>
-                    <a class="btn prova" href="">Inizia la tu aprova gratuita</a>
-                    <p>Annulla in questo momento</p>
+                    <a class="btn prova" href="">Inizia la tua prova gratuita</a>
+                    <p id="p">Annulla in qualsiasi momento</p>
+                    <a href="#"><i class="fas fa-arrow-down"></i></a>
                 </div>
                 <div class="float right">
-                    <img src="" alt="schermata dropbox">
+                    <img src="img/jumbo.png" alt="schermata dropbox">
                 </div>
             </div>    
         </div>
     </section>
-
+    <!-- fine jumbo -->
     <main>
         <div class="container">
             <!-- inizio piano pagamenti -->

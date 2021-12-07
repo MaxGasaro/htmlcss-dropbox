@@ -1,6 +1,8 @@
 /* regole generali */
 body {
     font-family: 'Open Sans', sans-serif;
+    max-width: 1380px;
+    margin: auto;
 }
 
 * {
@@ -11,7 +13,7 @@ body {
 /* inizio regole per header */
 header {
     width: 100%;
-    background-color: red; /*rimuovere*/
+    margin-bottom: 5px;
 }
 /* regole clearfix */
 header::after {
@@ -22,56 +24,90 @@ header::after {
 
 header .float.left {
     float: left;
-    height: 40px; /*rimuovere*/
-    background-color: aqua;  /*rimuovere*/
+    line-height: 50px; 
     width: 40%;
 }
 
 header .float.right {
     float: right;
-    height: 40px; /*rimuovere*/
-    background-color: aqua;  /*rimuovere*/
+    line-height: 50px;
     width: 40%;
     text-align: right;
 }
 
-#logo {
-    display: inline-block;
-}
-
-header nav.first.nav {
-    display: inline-block;
-}
-
-header div.btn.header {
-    display: inline-block;
-}
-
 header nav.first.nav ul li {
     display: inline-block;
+    line-height: 60px;
+    margin-right: 30px;
+}
+
+header nav.first.nav ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+header nav.first.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.7rem;
+}
+
+header nav.first.nav ul li.btn.header a {
+    color: #fff;
+    background-color:#0061FF;
+    padding: 5px 15px;
+}
+
+#logo {
+    margin-left: 30px;
 }
 /* fine regole per header */
 
 /* inizio jumbo */
 section.jumbotron {
-    background-color: blueviolet;
-    height: 400px; /*rimuovere*/
+    background-color: #B4D0E7;
 }
 
 .jumbotron .container-jumbo {
     width: 90%;
-    background-color: aquamarine; /*rimuovere*/
     margin: auto;
 }
 
 .jumbotron h1 {
     width: 100%;
-    background-color: brown; /*rimuovere*/
     text-align: left;
     padding: 40px 0px;
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+
+.jumbotron p {
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+.jumbotron .btn.prova{
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #0061ff;
+    text-decoration: none;
+}
+
+.jumbotron img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.jumbotron #p {
+    padding-top: 20px;
+}
+
+.jumbotron i {
+    font-size: 2rem;
+    color: #000;
 }
 /* regole clearfix jumbo */
-section.jumbotron .clearix.jumbo {
+section.jumbotron .clearfix.jumbo::after {
     content: '';
     display: table;
     clear: both;
@@ -81,15 +117,11 @@ section.jumbotron .clearix.jumbo {
     float: left;
     width: 40%;
     text-align: left;
-    background-color: burlywood; /*rimuovere*/
-    border: 1px solid black; /*rimuovere*/
 }
 
 .jumbotron .container-jumbo div.float.right {
     float: right;
     width: 60%;
-    background-color: burlywood; /*rimuovere*/
-    border: 1px solid black; /*rimuovere*/
 }
 /* fine jumbotron */
 
