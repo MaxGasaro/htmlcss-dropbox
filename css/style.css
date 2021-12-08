@@ -65,6 +65,7 @@ header nav.first.nav ul li.btn.header a {
 /* inizio jumbo */
 section.jumbotron {
     background-color: #B4D0E7;
+    margin-bottom: 30px;
 }
 
 .jumbotron .container-jumbo {
@@ -128,10 +129,8 @@ section.jumbotron .clearfix.jumbo::after {
 /* inizio main */
 /* regole generali per il main */
 main .container {
-    background-color: grey; /*rimuovere*/
     width: 80%;
     margin: auto;
-    /* height: 1000px; rimuovere */
 }
 
 main section {
@@ -142,6 +141,7 @@ main section {
 main div.clearfix {
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
 }
 /* regole clearfix */
 main div.clearfix::after {
@@ -152,52 +152,110 @@ main div.clearfix::after {
 
 main div.container h2.plan {
     width: 100%;
-    background-color: rosybrown; /*rimuovere*/
     margin-bottom: 30px;
 }
 
 main div.container div.fatturazione {
     width: 100%;
-    background-color: rosybrown; /*rimuovere*/
     margin-bottom: 20px;
 }
 
 main div.container div.fatturazione span {
-    background-color: beige; /*rimuovere*/
     margin-right: 20px;
+}
+
+main div.container div.fatturazione .circle.blue {
+    border: #0061FF 4px solid;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+main div.container div.fatturazione .circle.white {
+    border: 1px black solid;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 }
 
 main div.clearfix div.float {
     float: left;
-    width: calc(100% / 3);
-    height: 500px; /*rimuovere */
-    background-color: #fff; /*rimuovere */
-    border: 1px solid red; 
+    width: 30%;
+    border: 1px solid black; 
 }
 
-/*main div.clearfix div.float.standard {  ---> regola per distanziare elementi flottanti
-    margin-right: 20px;
-    margin-left: 20px;
-} */
+main div.clearfix div.float.standard {
+    width: calc(40% - 10%);
+    margin: 0px 5%;
+}
 
 section.payment div.top {
     height: 30px;
     width: 100%;
-    background-color: bisque; /*rimuovere*/
-    border-bottom: 1px solid red; 
+    text-align: center;
+    border-bottom: 1px solid black; 
+}
+
+section.payment div.top i {
+    padding: 5px;
+}
+
+.payment .lines {
+    width: 20%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.payment ul {
+ list-style: none;
+}
+
+.payment ul li {
+    margin-bottom: 8px;
+}
+
+.payment li i {
+    color: #0061FF;
+    padding: 5px;
+}
+
+.payment .bottom p i {
+    padding: 5px;
+}
+
+.payment .bottom a.btn.prova {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #0061ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.payment .bottom p, .payment .bottom span {
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 section.payment div.bottom {
-    /* height: 95%; rimuovere */
     width: 100%;
-    background-color: orange; /*rimuovere*/
+    padding: 30px;
+}
+
+.payment .or {
+    display: inline-block;
+}
+
+.payment h4 {
+    margin: 10px 0px;
 }
 
 div.enterprise {
     width: 100%;
-    background-color: #fff; /*rimuovere*/
-    height: 150px; /*rimuovere*/
-    border: 1px solid red; 
+    border: 1px solid black; 
 }
 /* fine sezione pagamenti */
 /* inizio sezione partner */
