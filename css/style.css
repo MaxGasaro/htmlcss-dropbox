@@ -13,7 +13,11 @@ body {
 /* inizio regole per header */
 header {
     width: 100%;
-    margin-bottom: 5px;
+    height: 60px;
+    position: fixed;
+    background-color: #fff;
+    max-width: 1380px;
+    top: 0;
 }
 /* regole clearfix */
 header::after {
@@ -24,13 +28,13 @@ header::after {
 
 header .float.left {
     float: left;
-    line-height: 50px; 
+    line-height: 60px; 
     width: 40%;
 }
 
 header .float.right {
     float: right;
-    line-height: 50px;
+    line-height: 60px;
     width: 40%;
     text-align: right;
 }
@@ -66,6 +70,7 @@ header nav.first.nav ul li.btn.header a {
 section.jumbotron {
     background-color: #B4D0E7;
     margin-bottom: 30px;
+    margin-top: 63px;
 }
 
 .jumbotron .container-jumbo {
@@ -185,7 +190,7 @@ main div.container div.fatturazione .circle.white {
 main div.clearfix div.float {
     float: left;
     width: 30%;
-    border: 1px solid black; 
+    border: 1px solid lightgray; 
 }
 
 main div.clearfix div.float.standard {
@@ -197,7 +202,7 @@ section.payment div.top {
     height: 30px;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid lightgray; 
 }
 
 section.payment div.top i {
@@ -206,7 +211,7 @@ section.payment div.top i {
 
 .payment .lines {
     width: 20%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     padding: 10px;
 }
 
@@ -255,7 +260,32 @@ section.payment div.bottom {
 
 div.enterprise {
     width: 100%;
-    border: 1px solid black; 
+    border: 1px solid lightgray; 
+}
+
+div.enterprise div.float-enterprise::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+div.enterprise div.float-enterprise h2 {
+    float: left;
+}
+
+div.enterprise div.float-enterprise a {
+    float: right;
+}
+
+div.enterprise div.float-enterprise a.btn.prova {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #0061ff;
+    text-decoration: none;
+}
+
+div.enterprise div.float-enterprise {
+    line-height: 20px;
 }
 /* fine sezione pagamenti */
 /* inizio sezione partner */
@@ -271,16 +301,37 @@ section div.partner::after {
 
 div.partner div.img {
     float: left;
-    width: 50%;
-    background-color: green; /*rimuouvere*/
+    width: 55%;
     padding-right: 30px;
+}
+
+div.partner div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 div.partner div.text {
     float: right;
-    width: 50%;
-    background-color: green; /*rimuouvere*/
+    width: 45%;
     padding-left: 30px;
+    padding-top: 5%;
+}
+
+div.partner div.text h3{
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+div.partner div.text a {
+    border: #000 1px solid;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+div.partner div.text p {
+    margin-bottom: 5%;
 }
 /* fine sezione partner */
 /* inizio sezione operations */
