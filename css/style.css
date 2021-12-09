@@ -341,15 +341,14 @@ section.operations div.op-clearfix .row-one::after {
     clear: both;
 }
 
+section.operations {
+    margin-bottom: 8%;
+}
+
 section.operations div.op-clearfix .row-two::after {
     content: '';
     display: table;
     clear: both;
-}
-
-section.operations div.op-clearfix {
-    background-color: aliceblue; /*rimuovere*/
-    height: 500px; /*rimuovere*/
 }
 
 .operations .row-one {
@@ -358,9 +357,31 @@ section.operations div.op-clearfix {
 
 .operations .float {
     float: left;
-    background-color: darkcyan; /*rimuovere*/
-    width: calc(100% / 3);
-    padding: 40px;
+    width: 30%;
+}
+
+.operations .float.center {
+    margin: 0 5%;
+    width: calc(40% - 10%);
+}
+
+section.operations div.title h2 {
+    font-size: 1.5rem;
+    font-weight: 1200;
+}
+
+.operations .float .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.operations .float h3 {
+    padding-bottom: 4%;
+}
+
+.operations .float p {
+    font-size: 0.8rem;
 }
 /* fine sezione operations */
 /* inizio sezione logos */
