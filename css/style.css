@@ -52,7 +52,7 @@ header nav.first.nav ul li:hover {
 header nav.first.nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 header nav.first.nav ul li.btn.header a {
@@ -63,6 +63,10 @@ header nav.first.nav ul li.btn.header a {
 
 #logo {
     margin-left: 30px;
+}
+
+#logo a img {
+    vertical-align: text-bottom;
 }
 /* fine regole per header */
 
@@ -167,6 +171,7 @@ main div.container div.fatturazione {
 
 main div.container div.fatturazione span {
     margin-right: 20px;
+    vertical-align: middle;
 }
 
 main div.container div.fatturazione .circle.blue {
@@ -620,7 +625,20 @@ footer div.lines {
 }
 
 footer .language {
-    color: #fff;
+    color: gray;
     font-size: 0.7rem;
+    line-height: 8px;
 }
 
+footer i {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+footer i.fa-globe-europe {
+    vertical-align: revert;
+}
+
+footer i.fa-sort-up {
+    vertical-align: text-top;
+}
